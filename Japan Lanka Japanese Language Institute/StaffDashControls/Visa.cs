@@ -196,5 +196,35 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
 
         }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
             StaffDashboard ss = new StaffDashboard();
             ss.Show();
+            this.Hide();
         }
     }
 }

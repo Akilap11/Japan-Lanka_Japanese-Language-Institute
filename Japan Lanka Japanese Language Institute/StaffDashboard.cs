@@ -21,11 +21,6 @@ namespace Japan_Lanka_Japanese_Language_Institute
             addusercontrol(uc);
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void addusercontrol(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -34,22 +29,22 @@ namespace Japan_Lanka_Japanese_Language_Institute
             userControl.BringToFront();
 
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void Button_Visa_Click(object sender, EventArgs e)
         {
             Visa uc=new Visa();
             addusercontrol(uc);
 
             
             Button_Visa.FillColor = Color.Green;           
-            guna2Button1.FillColor = Color.Orange;
+            Button_Course.FillColor = Color.Orange;
         }
 
-        private void guna2Button1_Click_1(object sender, EventArgs e)
+        private void Button_Course_Click_1(object sender, EventArgs e)
         {
             Course uc = new Course();
             addusercontrol(uc);
 
-            guna2Button1.FillColor = Color.Green;
+            Button_Course.FillColor = Color.Green;
             Button_Visa.FillColor = Color.Orange;
         }
 
