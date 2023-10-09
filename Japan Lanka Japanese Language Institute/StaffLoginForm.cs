@@ -53,5 +53,17 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
             label_Back.ForeColor = Color.DarkBlue;
         }
+
+        private void Button_StaffLogin_Click(object sender, EventArgs e)
+        {
+            StaffDashboard ss=new StaffDashboard();
+            ss.Show();
+        }
+
+        private void Button_StaffLogin_Click_1(object sender, EventArgs e)
+        {
+            StaffDashboard ss = new StaffDashboard();
+            ss.Show();
+        }
     }
 }
