@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Web.UI.WebControls;
 
 namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 {
@@ -68,6 +70,43 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            comboBox1.SelectedIndex = -1;
+            pictureBox1.Visible = false;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;)|*.jpeg;*.gif;*.bpm;*.png;";
+            if(Open.ShowDialog() == DialogResult.OK) 
+            {
+                textBox7.Text = Open.FileName;
+                pictureBox1.Image=new Bitmap(Open.FileName);
+                pictureBox1.Visible = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

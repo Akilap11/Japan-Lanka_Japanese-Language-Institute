@@ -17,7 +17,7 @@ namespace Japan_Lanka_Japanese_Language_Institute
         public StaffDashboard()
         {
             InitializeComponent();
-            Visa uc = new Visa();
+            Course uc = new Course();
             addusercontrol(uc);
         }
 
@@ -93,6 +93,11 @@ namespace Japan_Lanka_Japanese_Language_Institute
         }
 
         private void panelContainer_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }
