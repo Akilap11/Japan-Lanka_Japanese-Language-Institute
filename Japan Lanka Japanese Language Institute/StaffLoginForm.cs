@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace Japan_Lanka_Japanese_Language_Institute
 {
     public partial class StaffLoginForm : Form
@@ -62,6 +64,49 @@ namespace Japan_Lanka_Japanese_Language_Institute
 
         private void Button_StaffLogin_Click_1(object sender, EventArgs e)
         {
+           /* if (TextBox_StaffID.Text == "")
+            {                 MessageBox.Show("Please enter your Staff ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                           TextBox_StaffID.Focus();
+                           return;
+                       }
+            else if(TextBox_StaffPassword.Text == "")
+            {
+                MessageBox.Show("Please enter your Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TextBox_StaffPassword.Focus();
+                return;
+            }
+            else
+            {
+                try
+                {
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-FETG8PP;Initial Catalog=Japan_Lanka;Integrated Security=True");
+                    SqlCommand cmd =  new SqlCommand("select * from Staff where stid=@stid and password=@password", con);
+                    cmd.Parameters.AddWithValue("@stid", TextBox_StaffID.Text);
+                    cmd.Parameters.AddWithValue("@password", TextBox_StaffPassword.Text);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+
+                    da.Fill(dt);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        StaffDashboard ss = new StaffDashboard();
+                        ss.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }*/
+            
             StaffDashboard ss = new StaffDashboard();
             ss.Show();
             this.Hide();
