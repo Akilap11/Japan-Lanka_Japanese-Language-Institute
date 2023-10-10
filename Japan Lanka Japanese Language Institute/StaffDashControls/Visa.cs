@@ -226,5 +226,99 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
 
         }
+
+        private void Visa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            maskedTextBox2.Clear();
+            maskedTextBox3.Clear();
+            maskedTextBox4.Clear();
+            maskedTextBox5.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            comboBox1.SelectedIndex = -1;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox2.Text = Open.FileName;
+               
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox3.Text = Open.FileName;
+
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox4.Text = Open.FileName;
+
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox5.Text = Open.FileName;
+
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox6.Text = Open.FileName;
+
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Open = new OpenFileDialog();
+            Open.Filter = "Image Files(*.jpg;*.jpeg;*.gif;*.bmp;*.png;*.pdf;)|*.jpeg;*.gif;*.bpm;*.png;*.pdf;";
+            if (Open.ShowDialog() == DialogResult.OK)
+            {
+                textBox7.Text = Open.FileName;
+
+            }
+        }
     }
 }
