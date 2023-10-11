@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="StartingForm.Designer.cs">
       <DependentUpon>StartingForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </EmbeddedResource>
