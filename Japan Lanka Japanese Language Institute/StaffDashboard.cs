@@ -24,8 +24,8 @@ namespace Japan_Lanka_Japanese_Language_Institute
         private void addusercontrol(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
-            panelContainer.Controls.Clear();
-            panelContainer.Controls.Add(userControl);
+            //panelContainer.Controls.Clear();
+            //panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
 
         }

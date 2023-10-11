@@ -250,7 +250,6 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             textBox5.Clear();
             textBox6.Clear();
             textBox7.Clear();
-            comboBox1.SelectedIndex = -1;
             radioButton1.Checked = false;
             radioButton2.Checked = false;
         }

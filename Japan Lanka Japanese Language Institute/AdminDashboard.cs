@@ -31,5 +31,10 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

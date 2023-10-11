@@ -85,7 +85,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             comboBox1.SelectedIndex = -1;
-            pictureBox1.Visible = false;
+
 
         }
 
@@ -96,8 +96,6 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             if(Open.ShowDialog() == DialogResult.OK) 
             {
                 textBox7.Text = Open.FileName;
-                pictureBox1.Image=new Bitmap(Open.FileName);
-                pictureBox1.Visible = true;
             }
         }
 
