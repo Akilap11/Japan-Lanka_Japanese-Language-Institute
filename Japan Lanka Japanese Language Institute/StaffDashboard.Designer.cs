@@ -55,7 +55,7 @@
             // Button_Visa
             // 
             this.Button_Visa.FlatAppearance.BorderSize = 0;
-            this.Button_Visa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.Button_Visa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Button_Visa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Visa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Visa.Image = ((System.Drawing.Image)(resources.GetObject("Button_Visa.Image")));
@@ -71,9 +71,9 @@
             // 
             // Button_Course
             // 
-            this.Button_Course.BackColor = System.Drawing.Color.Silver;
+            this.Button_Course.BackColor = System.Drawing.Color.Transparent;
             this.Button_Course.FlatAppearance.BorderSize = 0;
-            this.Button_Course.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.Button_Course.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Button_Course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Course.ForeColor = System.Drawing.Color.White;
@@ -178,7 +178,7 @@
             // 
             this.pictureBox1.Image = global::Japan_Lanka_Japanese_Language_Institute.Properties.Resources.Asset_1_4x;
             this.pictureBox1.Location = new System.Drawing.Point(11, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(265, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +235,7 @@
             this.panel1.Controls.Add(this.Button_Course);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 53);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(293, 653);
             this.panel1.TabIndex = 4;
@@ -243,7 +243,7 @@
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
@@ -252,7 +252,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(291, 59);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Visa  ";
+            this.button2.Text = "Visa                 ";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -260,7 +260,7 @@
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));

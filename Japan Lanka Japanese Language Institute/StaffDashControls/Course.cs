@@ -18,7 +18,6 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
             InitializeComponent();
         }
-
         private void Course_Load(object sender, EventArgs e)
         {
 

@@ -58,8 +58,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.Searchbutton = new System.Windows.Forms.Button();
             this.TextBox_StaffID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Searchbutton = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -339,7 +339,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.checkBox1.Location = new System.Drawing.Point(698, 361);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(60, 20);
             this.checkBox1.TabIndex = 23;
@@ -351,7 +351,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.checkBox2.Location = new System.Drawing.Point(795, 362);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(51, 20);
             this.checkBox2.TabIndex = 24;
@@ -402,21 +402,6 @@
             this.panel5.Size = new System.Drawing.Size(1069, 60);
             this.panel5.TabIndex = 28;
             // 
-            // Searchbutton
-            // 
-            this.Searchbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Searchbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Searchbutton.BackgroundImage")));
-            this.Searchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Searchbutton.FlatAppearance.BorderSize = 0;
-            this.Searchbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Searchbutton.Location = new System.Drawing.Point(1021, 12);
-            this.Searchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Searchbutton.Name = "Searchbutton";
-            this.Searchbutton.Size = new System.Drawing.Size(35, 34);
-            this.Searchbutton.TabIndex = 14;
-            this.Searchbutton.UseVisualStyleBackColor = false;
-            // 
             // TextBox_StaffID
             // 
             this.TextBox_StaffID.BorderRadius = 8;
@@ -438,6 +423,21 @@
             this.TextBox_StaffID.SelectionStart = 6;
             this.TextBox_StaffID.Size = new System.Drawing.Size(989, 34);
             this.TextBox_StaffID.TabIndex = 13;
+            // 
+            // Searchbutton
+            // 
+            this.Searchbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Searchbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Searchbutton.BackgroundImage")));
+            this.Searchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Searchbutton.FlatAppearance.BorderSize = 0;
+            this.Searchbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searchbutton.Location = new System.Drawing.Point(1021, 12);
+            this.Searchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Searchbutton.Name = "Searchbutton";
+            this.Searchbutton.Size = new System.Drawing.Size(35, 34);
+            this.Searchbutton.TabIndex = 14;
+            this.Searchbutton.UseVisualStyleBackColor = false;
             // 
             // Course
             // 
