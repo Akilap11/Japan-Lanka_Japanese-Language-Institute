@@ -153,5 +153,11 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
             label_Exit.ForeColor = Color.DarkBlue;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CourseMeterials uc=new CourseMeterials();
+            addusercontrol(uc);
+        }
     }
 }

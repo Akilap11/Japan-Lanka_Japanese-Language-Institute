@@ -78,6 +78,12 @@
     <Compile Include="StaffDashControls\Course.Designer.cs">
       <DependentUpon>Course.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffDashControls\CourseMeterials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StaffDashControls\CourseMeterials.Designer.cs">
+      <DependentUpon>CourseMeterials.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffDashControls\Visa.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashControls\Course.resx">
       <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDashControls\CourseMeterials.resx">
+      <DependentUpon>CourseMeterials.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashControls\Visa.resx">
       <DependentUpon>Visa.cs</DependentUpon>

@@ -319,5 +319,25 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            maskedTextBox2.Clear();
+            maskedTextBox3.Clear();
+            maskedTextBox4.Clear();
+            maskedTextBox5.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+        }
     }
 }
