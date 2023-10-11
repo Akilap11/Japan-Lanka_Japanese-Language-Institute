@@ -93,6 +93,16 @@ namespace Japan_Lanka_Japanese_Language_Institute.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Asset_1_4x {
+            get {
+                object obj = ResourceManager.GetObject("Asset 1@4x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Opening {
             get {
                 object obj = ResourceManager.GetObject("Opening", resourceCulture);

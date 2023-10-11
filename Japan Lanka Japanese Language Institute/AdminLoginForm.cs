@@ -102,7 +102,7 @@ namespace Japan_Lanka_Japanese_Language_Institute
                 }
             }*/
 
-            StaffDashboard ss = new StaffDashboard(); //add admin dashboard link for this command create after admin dashboard
+            AdminDashboard ss = new AdminDashboard();
             ss.Show();
             this.Hide();
         }

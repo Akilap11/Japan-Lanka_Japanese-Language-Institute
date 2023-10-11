@@ -49,10 +49,10 @@
             // label_Login
             // 
             this.label_Login.AutoSize = true;
-            this.label_Login.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Login.Location = new System.Drawing.Point(593, 79);
             this.label_Login.Name = "label_Login";
-            this.label_Login.Size = new System.Drawing.Size(94, 48);
+            this.label_Login.Size = new System.Drawing.Size(85, 31);
             this.label_Login.TabIndex = 1;
             this.label_Login.Text = "Login";
             // 
@@ -64,7 +64,7 @@
             this.Button_AdminLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Button_AdminLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Button_AdminLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Button_AdminLogin.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AdminLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_AdminLogin.ForeColor = System.Drawing.Color.White;
             this.Button_AdminLogin.Location = new System.Drawing.Point(470, 362);
             this.Button_AdminLogin.Name = "Button_AdminLogin";
@@ -75,10 +75,10 @@
             // label_Admin
             // 
             this.label_Admin.AutoSize = true;
-            this.label_Admin.Font = new System.Drawing.Font("Poppins Medium", 18F);
+            this.label_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label_Admin.Location = new System.Drawing.Point(505, 82);
             this.label_Admin.Name = "label_Admin";
-            this.label_Admin.Size = new System.Drawing.Size(98, 42);
+            this.label_Admin.Size = new System.Drawing.Size(81, 29);
             this.label_Admin.TabIndex = 5;
             this.label_Admin.Text = "Admin";
             // 
@@ -108,10 +108,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(514, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 23);
+            this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 11;
             this.label2.Text = "Admin ID";
             // 
@@ -158,10 +158,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(514, 258);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 23);
+            this.label3.Size = new System.Drawing.Size(75, 16);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
             // 
@@ -198,10 +198,10 @@
             // label_Back
             // 
             this.label_Back.AutoSize = true;
-            this.label_Back.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Back.Location = new System.Drawing.Point(406, 9);
             this.label_Back.Name = "label_Back";
-            this.label_Back.Size = new System.Drawing.Size(66, 28);
+            this.label_Back.Size = new System.Drawing.Size(64, 20);
             this.label_Back.TabIndex = 16;
             this.label_Back.Text = "< Back";
             this.label_Back.Click += new System.EventHandler(this.label_Back_Click);

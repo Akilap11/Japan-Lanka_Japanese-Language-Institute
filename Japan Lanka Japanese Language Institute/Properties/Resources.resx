@@ -121,6 +121,9 @@
   <data name="StaffLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StaffLogin.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Opening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Opening.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2606517_5856" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2606517_5856.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,7 +133,7 @@
   <data name="AdminLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AdminLogin.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Opening" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Opening.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Asset 1@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asset 1@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
