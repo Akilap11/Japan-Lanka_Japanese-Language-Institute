@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 {
-    public partial class Visa : UserControl
+    public partial class Visa_Registration : UserControl
     {
-        public Visa()
+        public Visa_Registration()
         {
             InitializeComponent();
         }

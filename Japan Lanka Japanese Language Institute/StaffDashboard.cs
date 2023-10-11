@@ -24,8 +24,8 @@ namespace Japan_Lanka_Japanese_Language_Institute
         private void addusercontrol(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
-            //panelContainer.Controls.Clear();
-            //panelContainer.Controls.Add(userControl);
+            panelContener.Controls.Clear();
+            panelContener.Controls.Add(userControl);
             userControl.BringToFront();
 
         }
@@ -75,18 +75,6 @@ namespace Japan_Lanka_Japanese_Language_Institute
 
         }
 
-        private void Button_Course_Click(object sender, EventArgs e)
-        {
-            Course uc = new Course();
-            addusercontrol(uc);
-        }
-
-        private void Button_Visa_Click_1(object sender, EventArgs e)
-        {
-            Visa uc = new Visa();
-            addusercontrol(uc);
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -98,6 +86,33 @@ namespace Japan_Lanka_Japanese_Language_Institute
         }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void StaffDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Course_Click_1(object sender, EventArgs e)
+        {
+            Course uc = new Course();
+            addusercontrol(uc);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Button_Visa_Click(object sender, EventArgs e)
+        {
+            Visa_Registration uc = new Visa_Registration();
+            addusercontrol(uc);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

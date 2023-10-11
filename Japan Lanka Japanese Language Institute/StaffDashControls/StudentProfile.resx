@@ -117,56 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Button_Visa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVEhLtdWx
-        LkRBGMXxSSTiDYSGRCkeYJMlGjVPgEKl9AJKhXgEpUolUYhKQ7JR0YhKL6JRaCTX/zBX5syOzRq5N/ll
-        5/vmzLe72b25oWmaP+GawSZO8IRL9EpZKTZTXFNYwyHu8YpT7GAeG7gunZVyM4RF7OECb7jBPnqYKOR5
-        8V7LixCWcacDlQbo20wrQriNwf8Y2EwrhsNVbKYVWTBxhnXMRlqrV8oyavw3+MA25rCA3Uhr9bSnjJ2z
-        mVZkQRxAf9EXTOM90lo97Slj52ymFR58xiQe8YAltHtaq6c9ZZT9OWszrUhCOMdKXB9jK65Fa/W0VkbZ
-        do9R473BUbo3irLJOVrJnhVJCJ1/g85/A+n0XySd3wetzu7kKjbTCg9epXu/4VpNznyxfSuyYC2baUUW
-        jIrfhGvok7csZ0UWrGUzrfh+5Fm4wsgnWl+BGKyRPZOb8AlR8oViD68NvQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="Button_Course.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rAAAAKwBhgk01AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFQSURBVEhL5dW/
-        K0VhHMfxp5SQiAEDFlnYKJONlIEsVv4AAxMW5V8wGhltkslqVCYZFKWMBqXkt/f7dI+O23PvPfdyh5tP
-        veo8536f73PufZ7TDf8mI9jGFW6xgzH8Kv1YxSk+S7iACw8hV7qwhBO8I9a0lDP4QD34kRbM4QDPiE2u
-        xht8QB+0HeEascK/YO8wj2O8IlZUC3vZ097f6Ub6+38gNrGSdB96UTaDsPAcsUZZl/AkDcM0Yw0TySgS
-        N30ZHckohFHY4AZp0zv4LkzCWOsc5/bBmgVE0wkLnnCERfhUTZgq8FrT2McjnOPc3Atk3WMXswVee6+4
-        LtcCraj2JZPn37kVFzCbeEFxk1Ks3YDJtYDxJK3jEG5q9uj6Db3nZ9YMIM0MrNlKRlXGd0Xl4nvkAg/J
-        qA5ZgQvsJaM6JPce1JrGX6AN/q2OJ6MGTwhfzbPGVecRG4UAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVEhLtdWx
-        LkRBGMXxSSTiDYSGRCkeYJMlGjVPgEKl9AJKhXgEpUolUYhKQ7JR0YhKL6JRaCTX/zBX5syOzRq5N/ll
-        5/vmzLe72b25oWmaP+GawSZO8IRL9EpZKTZTXFNYwyHu8YpT7GAeG7gunZVyM4RF7OECb7jBPnqYKOR5
-        8V7LixCWcacDlQbo20wrQriNwf8Y2EwrhsNVbKYVWTBxhnXMRlqrV8oyavw3+MA25rCA3Uhr9bSnjJ2z
-        mVZkQRxAf9EXTOM90lo97Slj52ymFR58xiQe8YAltHtaq6c9ZZT9OWszrUhCOMdKXB9jK65Fa/W0VkbZ
-        do9R473BUbo3irLJOVrJnhVJCJ1/g85/A+n0XySd3wetzu7kKjbTCg9epXu/4VpNznyxfSuyYC2baUUW
-        jIrfhGvok7csZ0UWrGUzrfh+5Fm4wsgnWl+BGKyRPZOb8AlR8oViD68NvQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVEhLtdWx
-        LkRBGMXxSSTiDYSGRCkeYJMlGjVPgEKl9AJKhXgEpUolUYhKQ7JR0YhKL6JRaCTX/zBX5syOzRq5N/ll
-        5/vmzLe72b25oWmaP+GawSZO8IRL9EpZKTZTXFNYwyHu8YpT7GAeG7gunZVyM4RF7OECb7jBPnqYKOR5
-        8V7LixCWcacDlQbo20wrQriNwf8Y2EwrhsNVbKYVWTBxhnXMRlqrV8oyavw3+MA25rCA3Uhr9bSnjJ2z
-        mVZkQRxAf9EXTOM90lo97Slj52ymFR58xiQe8YAltHtaq6c9ZZT9OWszrUhCOMdKXB9jK65Fa/W0VkbZ
-        do9R473BUbo3irLJOVrJnhVJCJ1/g85/A+n0XySd3wetzu7kKjbTCg9epXu/4VpNznyxfSuyYC2baUUW
-        jIrfhGvok7csZ0UWrGUzrfh+5Fm4wsgnWl+BGKyRPZOb8AlR8oViD68NvQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>
