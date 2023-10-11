@@ -56,8 +56,23 @@ namespace Japan_Lanka_Japanese_Language_Institute
             label_Back.ForeColor = Color.DarkBlue;
         }
 
-        private void Button_AdminLogin_Click(object sender, EventArgs e)
+        private void Button_AdminLogin_Click_1(object sender, EventArgs e)
         {
+            if (TextBox_AdminID.Text == "")
+            {
+                MessageBox.Show("Please enter your Staff ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (TextBox_AdminPassword.Text == "")
+            {
+                MessageBox.Show("Please enter your Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (TextBox_AdminID.Text == "Admin" && TextBox_AdminPassword.Text == "Admin")
+            {
+                AdminDashboard ss = new AdminDashboard();
+                ss.Show();
+                this.Hide();
+            }
+
             // wait for admin dashborad and admin table of databse in the project 
             /* if (TextBox_AdminID.Text == "")
             {                 MessageBox.Show("Please enter your Staff ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -102,9 +117,9 @@ namespace Japan_Lanka_Japanese_Language_Institute
                 }
             }*/
 
-            AdminDashboard ss = new AdminDashboard();
+            /*AdminDashboard ss = new AdminDashboard();
             ss.Show();
-            this.Hide();
+            this.Hide();*/
         }
     }
 }
