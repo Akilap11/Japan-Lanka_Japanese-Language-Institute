@@ -36,8 +36,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_Exit = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Searchbutton = new System.Windows.Forms.Button();
+            this.TextBox_StaffID = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Button_Visa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,21 +53,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.TextBox_StaffID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Searchbutton = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.AdminDBBack = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +77,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel6.Controls.Add(this.AdminDBBack);
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.label1);
@@ -133,6 +135,9 @@
             this.label_Exit.Size = new System.Drawing.Size(21, 20);
             this.label_Exit.TabIndex = 9;
             this.label_Exit.Text = "X";
+            this.label_Exit.Click += new System.EventHandler(this.label_Exit_Click);
+            this.label_Exit.MouseEnter += new System.EventHandler(this.label_Exit_MouseEnter);
+            this.label_Exit.MouseLeave += new System.EventHandler(this.label_Exit_MouseLeave);
             // 
             // panel2
             // 
@@ -142,6 +147,55 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(808, 531);
             this.panel2.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.Searchbutton);
+            this.panel5.Controls.Add(this.TextBox_StaffID);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(808, 49);
+            this.panel5.TabIndex = 3;
+            // 
+            // Searchbutton
+            // 
+            this.Searchbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Searchbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Searchbutton.BackgroundImage")));
+            this.Searchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Searchbutton.FlatAppearance.BorderSize = 0;
+            this.Searchbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searchbutton.Location = new System.Drawing.Point(766, 10);
+            this.Searchbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.Searchbutton.Name = "Searchbutton";
+            this.Searchbutton.Size = new System.Drawing.Size(26, 28);
+            this.Searchbutton.TabIndex = 14;
+            this.Searchbutton.UseVisualStyleBackColor = false;
+            // 
+            // TextBox_StaffID
+            // 
+            this.TextBox_StaffID.BorderRadius = 8;
+            this.TextBox_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_StaffID.DefaultText = "Search";
+            this.TextBox_StaffID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox_StaffID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox_StaffID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_StaffID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_StaffID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_StaffID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBox_StaffID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_StaffID.Location = new System.Drawing.Point(16, 11);
+            this.TextBox_StaffID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBox_StaffID.Name = "TextBox_StaffID";
+            this.TextBox_StaffID.PasswordChar = '\0';
+            this.TextBox_StaffID.PlaceholderText = "";
+            this.TextBox_StaffID.SelectedText = "";
+            this.TextBox_StaffID.SelectionStart = 6;
+            this.TextBox_StaffID.Size = new System.Drawing.Size(742, 28);
+            this.TextBox_StaffID.TabIndex = 13;
             // 
             // panel3
             // 
@@ -170,6 +224,75 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(218, 531);
             this.panel4.TabIndex = 4;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(0, 394);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(218, 48);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Income Analysis";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(0, 346);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(218, 48);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Feedback Analysis";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(0, 298);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(218, 48);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Marketing Analysis";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(0, 250);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(218, 48);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Result Analysis";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -288,123 +411,19 @@
             this.label4.Text = "Name :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // TextBox_StaffID
+            // AdminDBBack
             // 
-            this.TextBox_StaffID.BorderRadius = 8;
-            this.TextBox_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_StaffID.DefaultText = "Search";
-            this.TextBox_StaffID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox_StaffID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox_StaffID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_StaffID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_StaffID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_StaffID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBox_StaffID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_StaffID.Location = new System.Drawing.Point(16, 11);
-            this.TextBox_StaffID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBox_StaffID.Name = "TextBox_StaffID";
-            this.TextBox_StaffID.PasswordChar = '\0';
-            this.TextBox_StaffID.PlaceholderText = "";
-            this.TextBox_StaffID.SelectedText = "";
-            this.TextBox_StaffID.SelectionStart = 6;
-            this.TextBox_StaffID.Size = new System.Drawing.Size(742, 28);
-            this.TextBox_StaffID.TabIndex = 13;
-            // 
-            // Searchbutton
-            // 
-            this.Searchbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Searchbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Searchbutton.BackgroundImage")));
-            this.Searchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Searchbutton.FlatAppearance.BorderSize = 0;
-            this.Searchbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Searchbutton.Location = new System.Drawing.Point(766, 10);
-            this.Searchbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Searchbutton.Name = "Searchbutton";
-            this.Searchbutton.Size = new System.Drawing.Size(26, 28);
-            this.Searchbutton.TabIndex = 14;
-            this.Searchbutton.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.Searchbutton);
-            this.panel5.Controls.Add(this.TextBox_StaffID);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(808, 49);
-            this.panel5.TabIndex = 3;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(0, 250);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 48);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Result Analysis";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(0, 298);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 48);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Marketing Analysis";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(0, 346);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(218, 48);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Feedback Analysis";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(0, 394);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(218, 48);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Income Analysis";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button6.UseVisualStyleBackColor = true;
+            this.AdminDBBack.AutoSize = true;
+            this.AdminDBBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminDBBack.ForeColor = System.Drawing.Color.White;
+            this.AdminDBBack.Location = new System.Drawing.Point(233, 11);
+            this.AdminDBBack.Name = "AdminDBBack";
+            this.AdminDBBack.Size = new System.Drawing.Size(64, 20);
+            this.AdminDBBack.TabIndex = 19;
+            this.AdminDBBack.Text = "< Back";
+            this.AdminDBBack.Click += new System.EventHandler(this.AdminDBBack_Click);
+            this.AdminDBBack.MouseEnter += new System.EventHandler(this.AdminDBBack_MouseEnter);
+            this.AdminDBBack.MouseLeave += new System.EventHandler(this.AdminDBBack_MouseLeave);
             // 
             // AdminDashboard
             // 
@@ -423,11 +442,11 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -458,5 +477,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label AdminDBBack;
     }
 }

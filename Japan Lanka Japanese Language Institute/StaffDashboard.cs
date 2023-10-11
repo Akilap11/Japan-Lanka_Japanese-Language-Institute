@@ -116,5 +116,42 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
 
         }
+
+        private void StaffDBBack_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the StartingForm
+            StaffLoginForm staffLoginForm = new StaffLoginForm();
+
+            // Show the StartingForm
+            staffLoginForm.Show();
+
+            // Close or hide the current form as needed
+            this.Close(); // or this.Hide() if you want to hide it
+        }
+
+        private void StaffDBBack_MouseEnter(object sender, EventArgs e)
+        {
+            StaffDBBack.ForeColor = Color.DeepPink;
+        }
+
+        private void StaffDBBack_MouseLeave(object sender, EventArgs e)
+        {
+            StaffDBBack.ForeColor = Color.White;
+        }
+
+        private void label_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label_Exit_MouseEnter(object sender, EventArgs e)
+        {
+            label_Exit.ForeColor = Color.Red;
+        }
+
+        private void label_Exit_MouseLeave(object sender, EventArgs e)
+        {
+            label_Exit.ForeColor = Color.DarkBlue;
+        }
     }
 }

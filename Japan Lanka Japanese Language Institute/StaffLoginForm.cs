@@ -111,5 +111,27 @@ namespace Japan_Lanka_Japanese_Language_Institute
             ss.Show();
             this.Hide();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the StartingForm
+            StartingForm startingForm = new StartingForm();
+
+            // Show the StartingForm
+            startingForm.Show();
+
+            // Close or hide the current form as needed
+            this.Close(); // or this.Hide() if you want to hide it
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.DeepPink;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.DarkBlue;
+        }
     }
 }
