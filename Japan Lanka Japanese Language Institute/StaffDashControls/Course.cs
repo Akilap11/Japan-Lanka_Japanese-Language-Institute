@@ -88,8 +88,9 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             comboBox1.SelectedIndex = -1;
-
-
+            textBox2.Clear();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
         }
 
         private void button3_Click(object sender, EventArgs e)

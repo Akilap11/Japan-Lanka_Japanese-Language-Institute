@@ -88,6 +88,12 @@
     <Compile Include="StaffDashControls\CourseMeterials.Designer.cs">
       <DependentUpon>CourseMeterials.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffDashControls\StudentAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StaffDashControls\StudentAttendance.Designer.cs">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffDashControls\StudentCourseProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashControls\CourseMeterials.resx">
       <DependentUpon>CourseMeterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDashControls\StudentAttendance.resx">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashControls\StudentCourseProfile.resx">
       <DependentUpon>StudentCourseProfile.cs</DependentUpon>

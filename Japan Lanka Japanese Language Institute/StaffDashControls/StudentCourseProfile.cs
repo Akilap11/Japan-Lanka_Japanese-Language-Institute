@@ -19,7 +19,10 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            radioButton1.Checked = true;
+            radioButton2.Checked = true;
+            comboBox1.SelectedIndex = -1;
+            textBox1.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -35,6 +38,16 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         private void label29_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
         }
     }
 }
