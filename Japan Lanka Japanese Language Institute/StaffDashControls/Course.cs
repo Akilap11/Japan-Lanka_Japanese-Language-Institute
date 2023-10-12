@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 {
@@ -112,65 +113,11 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            String fullname = textBox1.Text;
-            String dob = dateTimePicker1.Text;
-            String Age = textBox3.Text;
-            String address = textBox4.Text;
-            String email = textBox5.Text;
-            String nic = textBox6.Text;
-            String classes = comboBox1.Text;
-            string alvel = al;
-            String gender = selectedgender;
-            String ambassador = textBox2.Text;
-
-          
-            // Replace these connection string and query with your actual database details.
-            string connectionString = "";
-            string insertQuery = "INSERT INTO YourTable (Fullname, DOB, Age, Gender, Address, Email, NIC, Classes, AL, Ambassador) " +
-                                "VALUES (@Fullname, @DOB, @Age, @Gender, @Address, @Email, @NIC, @Classes, @AL, @Ambassador)";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
-                {
-                    cmd.Parameters.AddWithValue("@Fullname", fullname);
-                    cmd.Parameters.AddWithValue("@DOB", dob);
-                    cmd.Parameters.AddWithValue("@Age", Age);
-                    cmd.Parameters.AddWithValue("@Gender", gender);
-                    cmd.Parameters.AddWithValue("@Address", address);
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@NIC", nic);
-                    cmd.Parameters.AddWithValue("@Classes", classes);
-                    cmd.Parameters.AddWithValue("@AL", alvel);
-                    cmd.Parameters.AddWithValue("@Ambassador", ambassador);
-
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    if (rowsAffected > 0)
-                    {
-                        Console.WriteLine("Data inserted successfully.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Data insertion failed.");
-                    }
-                }
-            }
-
-
-
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-                 selectedgender = "Male";
+                selectedgender = "Male";
             }
         }
 
@@ -178,7 +125,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
             if (radioButton2.Checked)
             {
-                 selectedgender = "Female";
+                selectedgender = "Female";
             }
         }
 
@@ -205,5 +152,75 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
                 al = "No";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String fullname = textBox1.Text;
+            String dob = dateTimePicker1.Text;
+            String Age = textBox3.Text;
+            String address = textBox4.Text;
+            String email = textBox5.Text;
+            String nic = textBox6.Text;
+            String classes = comboBox1.Text;
+            string alvel = al;
+            String gender = selectedgender;
+            String ambassador = textBox2.Text;
+
+
+
+            DateTime parsedDate;
+
+            if (DateTime.TryParseExact(dob, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+            {
+                // Date was parsed successfully
+            }
+            else
+            {
+                // Date could not be parsed
+                // Handle the error here
+            }
+
+
+            // Replace these connection string and query with your actual database details.
+            string connectionString = "Data Source=DESKTOP-0O64EMR\\SQLEXPRESS;Initial Catalog=JapanLanka;Integrated Security=True";
+            string insertQuery = "insert into courses (full_name,dob,age,gender,address,email,nic,class,al,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Ambassador)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Fullname", fullname);
+                    cmd.Parameters.AddWithValue("@DOB", dob);
+                    cmd.Parameters.AddWithValue("@Age", Age);
+                    cmd.Parameters.AddWithValue("@Gender", gender);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@NIC", nic);
+                    cmd.Parameters.AddWithValue("@Classes", classes);
+                    cmd.Parameters.AddWithValue("@ALvel", alvel);
+                    cmd.Parameters.AddWithValue("@Ambassador", ambassador);
+
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Data inserted successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Data insertion failed.");
+                    }
+
+                }
+            }
+
+
+
+        }
+
+      
     }
 }
