@@ -46,10 +46,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelContener = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Searchbutton = new System.Windows.Forms.Button();
+            this.TextBox_StaffID = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelLogo.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Button_Visa
@@ -252,7 +256,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(291, 59);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Visa                 ";
+            this.button2.Text = "Students Attendance";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -277,12 +281,62 @@
             // panelContener
             // 
             this.panelContener.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContener.Location = new System.Drawing.Point(293, 53);
+            this.panelContener.Location = new System.Drawing.Point(293, 113);
             this.panelContener.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContener.Name = "panelContener";
-            this.panelContener.Size = new System.Drawing.Size(1068, 653);
+            this.panelContener.Size = new System.Drawing.Size(1068, 593);
             this.panelContener.TabIndex = 5;
             this.panelContener.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.Searchbutton);
+            this.panel5.Controls.Add(this.TextBox_StaffID);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(293, 53);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1068, 60);
+            this.panel5.TabIndex = 29;
+            // 
+            // Searchbutton
+            // 
+            this.Searchbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Searchbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Searchbutton.BackgroundImage")));
+            this.Searchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Searchbutton.FlatAppearance.BorderSize = 0;
+            this.Searchbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(64)))), ((int)(((byte)(206)))));
+            this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searchbutton.Location = new System.Drawing.Point(1021, 12);
+            this.Searchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Searchbutton.Name = "Searchbutton";
+            this.Searchbutton.Size = new System.Drawing.Size(35, 34);
+            this.Searchbutton.TabIndex = 14;
+            this.Searchbutton.UseVisualStyleBackColor = false;
+            this.Searchbutton.Click += new System.EventHandler(this.Searchbutton_Click);
+            // 
+            // TextBox_StaffID
+            // 
+            this.TextBox_StaffID.BorderRadius = 8;
+            this.TextBox_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_StaffID.DefaultText = "Search";
+            this.TextBox_StaffID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox_StaffID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox_StaffID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_StaffID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_StaffID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_StaffID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBox_StaffID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_StaffID.Location = new System.Drawing.Point(21, 14);
+            this.TextBox_StaffID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TextBox_StaffID.Name = "TextBox_StaffID";
+            this.TextBox_StaffID.PasswordChar = '\0';
+            this.TextBox_StaffID.PlaceholderText = "";
+            this.TextBox_StaffID.SelectedText = "";
+            this.TextBox_StaffID.SelectionStart = 6;
+            this.TextBox_StaffID.Size = new System.Drawing.Size(989, 34);
+            this.TextBox_StaffID.TabIndex = 13;
             // 
             // StaffDashboard
             // 
@@ -291,6 +345,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1361, 706);
             this.Controls.Add(this.panelContener);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.ForeColor = System.Drawing.Color.Transparent;
@@ -306,6 +361,7 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -328,5 +384,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelContener;
         private System.Windows.Forms.Label StaffDBBack;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button Searchbutton;
+        private Guna.UI2.WinForms.Guna2TextBox TextBox_StaffID;
     }
 }

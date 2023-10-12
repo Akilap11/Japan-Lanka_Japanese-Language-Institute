@@ -103,8 +103,7 @@ namespace Japan_Lanka_Japanese_Language_Institute
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StudentCourseProfile uc = new StudentCourseProfile();
-            addusercontrol(uc);
+           
         }
 
         private void Button_Visa_Click(object sender, EventArgs e)
@@ -158,6 +157,12 @@ namespace Japan_Lanka_Japanese_Language_Institute
         private void button1_Click(object sender, EventArgs e)
         {
             CourseMeterials uc=new CourseMeterials();
+            addusercontrol(uc);
+        }
+
+        private void Searchbutton_Click(object sender, EventArgs e)
+        {
+            StudentCourseProfile uc = new StudentCourseProfile();
             addusercontrol(uc);
         }
     }
