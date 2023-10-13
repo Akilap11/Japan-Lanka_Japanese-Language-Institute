@@ -69,6 +69,12 @@
     <Compile Include="AdminDashControls\CourseAnalysis.Designer.cs">
       <DependentUpon>CourseAnalysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminDashControls\VisaApprovels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashControls\VisaApprovels.Designer.cs">
+      <DependentUpon>VisaApprovels.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\CourseAnalysis.resx">
       <DependentUpon>CourseAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashControls\VisaApprovels.resx">
+      <DependentUpon>VisaApprovels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
