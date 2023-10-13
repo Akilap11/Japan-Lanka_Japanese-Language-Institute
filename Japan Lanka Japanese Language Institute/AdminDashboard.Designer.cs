@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.AdminDBBack = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.AdminDBBack = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,6 +88,20 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1021, 43);
             this.panel6.TabIndex = 2;
+            // 
+            // AdminDBBack
+            // 
+            this.AdminDBBack.AutoSize = true;
+            this.AdminDBBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminDBBack.ForeColor = System.Drawing.Color.White;
+            this.AdminDBBack.Location = new System.Drawing.Point(233, 11);
+            this.AdminDBBack.Name = "AdminDBBack";
+            this.AdminDBBack.Size = new System.Drawing.Size(64, 20);
+            this.AdminDBBack.TabIndex = 19;
+            this.AdminDBBack.Text = "< Back";
+            this.AdminDBBack.Click += new System.EventHandler(this.AdminDBBack_Click);
+            this.AdminDBBack.MouseEnter += new System.EventHandler(this.AdminDBBack_MouseEnter);
+            this.AdminDBBack.MouseLeave += new System.EventHandler(this.AdminDBBack_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -324,7 +338,7 @@
             this.Button_Visa.Name = "Button_Visa";
             this.Button_Visa.Size = new System.Drawing.Size(218, 48);
             this.Button_Visa.TabIndex = 3;
-            this.Button_Visa.Text = "Visa  ";
+            this.Button_Visa.Text = "Visa Approvels";
             this.Button_Visa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Button_Visa.UseVisualStyleBackColor = true;
             // 
@@ -343,7 +357,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(218, 48);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Course";
+            this.button1.Text = "Course Enrollments";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -410,20 +424,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Name :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // AdminDBBack
-            // 
-            this.AdminDBBack.AutoSize = true;
-            this.AdminDBBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminDBBack.ForeColor = System.Drawing.Color.White;
-            this.AdminDBBack.Location = new System.Drawing.Point(233, 11);
-            this.AdminDBBack.Name = "AdminDBBack";
-            this.AdminDBBack.Size = new System.Drawing.Size(64, 20);
-            this.AdminDBBack.TabIndex = 19;
-            this.AdminDBBack.Text = "< Back";
-            this.AdminDBBack.Click += new System.EventHandler(this.AdminDBBack_Click);
-            this.AdminDBBack.MouseEnter += new System.EventHandler(this.AdminDBBack_MouseEnter);
-            this.AdminDBBack.MouseLeave += new System.EventHandler(this.AdminDBBack_MouseLeave);
             // 
             // AdminDashboard
             // 
