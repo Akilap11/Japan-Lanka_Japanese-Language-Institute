@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
-    public partial class VisaApprovels : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public VisaApprovels()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
-    public partial class CourseAnalysis : Form
+    public partial class CourseAnalysis : UserControl
     {
         public CourseAnalysis()
         {

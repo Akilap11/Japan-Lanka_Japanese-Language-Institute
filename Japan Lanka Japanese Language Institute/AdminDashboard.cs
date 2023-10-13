@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Japan_Lanka_Japanese_Language_Institute.AdminDashControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Japan_Lanka_Japanese_Language_Institute
         public AdminDashboard()
         {
             InitializeComponent();
+            CourseAnalysis uc=new CourseAnalysis();
+            addusercontrol(uc);
+        }
+        private void addusercontrol(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(userControl);
+            userControl.BringToFront();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -72,6 +83,25 @@ namespace Japan_Lanka_Japanese_Language_Institute
         private void label_Exit_MouseLeave(object sender, EventArgs e)
         {
             label_Exit.ForeColor= Color.DarkBlue;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CourseAnalysis uc = new CourseAnalysis();
+            addusercontrol(uc);
+        }
+
+        private void Button_Visa_Click(object sender, EventArgs e)
+        {
+            VisaApprovels uc= new VisaApprovels();
+            addusercontrol(uc);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StaffControll uc=new StaffControll();
+            addusercontrol(uc) ;
         }
     }
 }

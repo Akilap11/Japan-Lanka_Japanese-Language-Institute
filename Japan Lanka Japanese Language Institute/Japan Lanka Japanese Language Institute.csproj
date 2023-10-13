@@ -64,22 +64,22 @@
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminDashControls\CourseAnalysis.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AdminDashControls\CourseAnalysis.Designer.cs">
       <DependentUpon>CourseAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminDashControls\StaffControll.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminDashControls\StaffControll.Designer.cs">
-      <DependentUpon>StaffControll.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminDashControls\VisaApprovels.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AdminDashControls\VisaApprovels.Designer.cs">
       <DependentUpon>VisaApprovels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashControls\StaffControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashControls\StaffControll.Designer.cs">
+      <DependentUpon>StaffControll.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginForm.cs">
       <SubType>Form</SubType>
@@ -140,11 +140,11 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminDashControls\CourseAnalysis.resx">
-      <DependentUpon>CourseAnalysis.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\StaffControll.resx">
       <DependentUpon>StaffControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashControls\CourseAnalysis.resx">
+      <DependentUpon>CourseAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\VisaApprovels.resx">
       <DependentUpon>VisaApprovels.cs</DependentUpon>
