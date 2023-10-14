@@ -119,6 +119,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1064, 479);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label7
             // 
@@ -278,6 +279,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1064, 479);
             this.panel2.TabIndex = 14;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label12
             // 
@@ -437,6 +439,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1064, 479);
             this.panel3.TabIndex = 15;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label23
             // 
@@ -576,13 +579,13 @@
             this.label33.TabIndex = 0;
             this.label33.Text = "Intake : 2023 October";
             // 
-            // UserControl2
+            // CourseAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "UserControl2";
+            this.Name = "CourseAnalysis";
             this.Size = new System.Drawing.Size(1068, 593);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
