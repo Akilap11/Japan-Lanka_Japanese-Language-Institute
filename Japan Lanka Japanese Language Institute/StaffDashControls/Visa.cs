@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 {
     public partial class Visa_Registration : UserControl
     {
+        string course;
+        string selectedgender;
         public Visa_Registration()
         {
             InitializeComponent();
@@ -339,5 +344,126 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             checkBox1.Checked = false;
             checkBox2.Checked = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String fullname = textBox1.Text;
+            String dob = dateTimePicker1.Text;
+            String Age = maskedTextBox2.Text;
+            String gender = "";
+            String address = maskedTextBox3.Text;
+            String email = maskedTextBox4.Text;
+            String nic = maskedTextBox5.Text;
+            String selectcourse = course;
+
+            //documents 
+
+            String birth = textBox2.Text;
+            String property = textBox3.Text;
+            String niccopy = textBox4.Text;
+            String alcopy = textBox5.Text;
+            String olcopy = textBox6.Text;
+            String payment = textBox7.Text;
+            String ambassdor = textBox8.Text;
+
+
+            DateTime parsedDate;
+
+            if (DateTime.TryParseExact(dob, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+            {
+               
+            }
+            else
+            {
+                
+            }
+
+            // add values of database
+
+            string connectionString = "Data Source=DESKTOP-FETG8PP;Initial Catalog=JapanLanka;Integrated Security=True";
+            string insertQuery = "insert into visa1 (full_name,dob,age,gender,address,email,nic,course,ambassador_name) values (@Fullname,@DOB,@Age,@Gender,@Address,@Email,@NIC,@Course,@Ambassador)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Fullname", fullname);
+                    cmd.Parameters.AddWithValue("@DOB", dob);
+                    cmd.Parameters.AddWithValue("@Age", Age);
+                    cmd.Parameters.AddWithValue("@Gender", gender);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@NIC", nic);
+                    cmd.Parameters.AddWithValue("@Course", selectcourse);
+                    cmd.Parameters.AddWithValue("@Ambassador", ambassdor);
+                   
+
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Data inserted successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Data insertion failed.");
+                    }
+
+                }
+            }
+
+
+
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                course = "Yes";
+            }
+            else
+            {
+                course = "No";
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                course = "No";
+            }
+            else
+            {
+                course = "No";
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                selectedgender = "Male";
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                selectedgender = "Female";
+            }
+        }
+
+
+       
+
+            
+
     }
 }

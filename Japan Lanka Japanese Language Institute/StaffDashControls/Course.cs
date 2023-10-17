@@ -172,17 +172,16 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
             if (DateTime.TryParseExact(dob, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
             {
-                // Date was parsed successfully
+                
             }
             else
             {
-                // Date could not be parsed
-                // Handle the error here
+             
             }
 
 
-            // Replace these connection string and query with your actual database details.
-            string connectionString = "Data Source=DESKTOP-0O64EMR\\SQLEXPRESS;Initial Catalog=JapanLanka;Integrated Security=True";
+            
+            string connectionString = "Data Source=DESKTOP-FETG8PP;Initial Catalog=JapanLanka;Integrated Security=True";
             string insertQuery = "insert into courses (full_name,dob,age,gender,address,email,nic,class,al,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Ambassador)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
