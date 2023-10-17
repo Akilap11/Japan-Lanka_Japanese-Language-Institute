@@ -84,6 +84,12 @@
     <Compile Include="AdminDashControls\CourseAnalysis.Designer.cs">
       <DependentUpon>CourseAnalysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminDashControls\ResultAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashControls\ResultAnalysis.Designer.cs">
+      <DependentUpon>ResultAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashControls\VisaApprovels.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashControls\ResultAnalysis.resx">
+      <DependentUpon>ResultAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\StaffControll.resx">
       <DependentUpon>StaffControll.cs</DependentUpon>

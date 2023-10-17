@@ -103,5 +103,11 @@ namespace Japan_Lanka_Japanese_Language_Institute
             StaffControll uc=new StaffControll();
             addusercontrol(uc) ;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ResultAnalysis uc=new ResultAnalysis();
+            addusercontrol(uc);
+        }
     }
 }
