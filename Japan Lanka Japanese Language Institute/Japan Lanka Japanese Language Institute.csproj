@@ -84,6 +84,18 @@
     <Compile Include="AdminDashControls\CourseAnalysis.Designer.cs">
       <DependentUpon>CourseAnalysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminDashControls\FeedbackAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashControls\FeedbackAnalysis.Designer.cs">
+      <DependentUpon>FeedbackAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashControls\MarketingAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashControls\MarketingAnalysis.Designer.cs">
+      <DependentUpon>MarketingAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashControls\ResultAnalysis.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,6 +172,9 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashControls\MarketingAnalysis.resx">
+      <DependentUpon>MarketingAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\ResultAnalysis.resx">
       <DependentUpon>ResultAnalysis.cs</DependentUpon>
