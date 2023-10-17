@@ -173,6 +173,9 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashControls\FeedbackAnalysis.resx">
+      <DependentUpon>FeedbackAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDashControls\MarketingAnalysis.resx">
       <DependentUpon>MarketingAnalysis.cs</DependentUpon>
     </EmbeddedResource>
