@@ -116,5 +116,11 @@ namespace Japan_Lanka_Japanese_Language_Institute
             FeedbackAnalysis uc=new FeedbackAnalysis();
             addusercontrol(uc);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            IncomeAnalysis uc=new IncomeAnalysis();
+            addusercontrol(uc);
+        }
     }
 }

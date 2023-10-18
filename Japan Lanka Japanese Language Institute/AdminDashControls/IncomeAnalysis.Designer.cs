@@ -1,6 +1,6 @@
 ﻿namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
-    partial class CourseAnalysis
+    partial class IncomeAnalysis
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -89,13 +89,11 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(801, 482);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -118,8 +116,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(798, 389);
-            this.panel1.TabIndex = 13;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 14;
             // 
             // label7
             // 
@@ -127,9 +124,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(638, 298);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.Size = new System.Drawing.Size(53, 17);
             this.label7.TabIndex = 11;
-            this.label7.Text = "N1 Count";
+            this.label7.Text = "Income";
             // 
             // label8
             // 
@@ -137,9 +134,9 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(638, 265);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 17);
+            this.label8.Size = new System.Drawing.Size(53, 17);
             this.label8.TabIndex = 10;
-            this.label8.Text = "N2 Count";
+            this.label8.Text = "Income";
             // 
             // label9
             // 
@@ -147,9 +144,9 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(638, 232);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 17);
+            this.label9.Size = new System.Drawing.Size(53, 17);
             this.label9.TabIndex = 9;
-            this.label9.Text = "N3 Count";
+            this.label9.Text = "Income";
             // 
             // label10
             // 
@@ -157,9 +154,9 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(638, 199);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 17);
+            this.label10.Size = new System.Drawing.Size(53, 17);
             this.label10.TabIndex = 8;
-            this.label10.Text = "N2 Count";
+            this.label10.Text = "Income";
             // 
             // label11
             // 
@@ -167,9 +164,9 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(638, 166);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 17);
+            this.label11.Size = new System.Drawing.Size(53, 17);
             this.label11.TabIndex = 7;
-            this.label11.Text = "N5 Count";
+            this.label11.Text = "Income";
             // 
             // label6
             // 
@@ -223,16 +220,16 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(29, 69);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Enrollments";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Enrollments";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(490, 300);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -265,8 +262,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 398);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(798, 389);
-            this.panel2.TabIndex = 14;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.TabIndex = 15;
             // 
             // label12
             // 
@@ -274,9 +270,9 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(638, 298);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 17);
+            this.label12.Size = new System.Drawing.Size(53, 17);
             this.label12.TabIndex = 11;
-            this.label12.Text = "N1 Count";
+            this.label12.Text = "Income";
             // 
             // label13
             // 
@@ -284,9 +280,9 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(638, 265);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 17);
+            this.label13.Size = new System.Drawing.Size(53, 17);
             this.label13.TabIndex = 10;
-            this.label13.Text = "N2 Count";
+            this.label13.Text = "Income";
             // 
             // label14
             // 
@@ -294,9 +290,9 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(638, 232);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 17);
+            this.label14.Size = new System.Drawing.Size(53, 17);
             this.label14.TabIndex = 9;
-            this.label14.Text = "N3 Count";
+            this.label14.Text = "Income";
             // 
             // label15
             // 
@@ -304,9 +300,9 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(638, 199);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 17);
+            this.label15.Size = new System.Drawing.Size(53, 17);
             this.label15.TabIndex = 8;
-            this.label15.Text = "N2 Count";
+            this.label15.Text = "Income";
             // 
             // label16
             // 
@@ -314,9 +310,9 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(638, 166);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 17);
+            this.label16.Size = new System.Drawing.Size(53, 17);
             this.label16.TabIndex = 7;
-            this.label16.Text = "N5 Count";
+            this.label16.Text = "Income";
             // 
             // label17
             // 
@@ -370,16 +366,16 @@
             // 
             // chart2
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart2.Legends.Add(legend3);
             this.chart2.Location = new System.Drawing.Point(29, 69);
             this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Enrollments";
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(490, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
@@ -412,8 +408,7 @@
             this.panel3.Location = new System.Drawing.Point(3, 793);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(798, 389);
-            this.panel3.TabIndex = 15;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.TabIndex = 16;
             // 
             // label23
             // 
@@ -421,9 +416,9 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(638, 298);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 17);
+            this.label23.Size = new System.Drawing.Size(53, 17);
             this.label23.TabIndex = 11;
-            this.label23.Text = "N1 Count";
+            this.label23.Text = "Income";
             // 
             // label24
             // 
@@ -431,9 +426,9 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(638, 265);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(66, 17);
+            this.label24.Size = new System.Drawing.Size(53, 17);
             this.label24.TabIndex = 10;
-            this.label24.Text = "N2 Count";
+            this.label24.Text = "Income";
             // 
             // label25
             // 
@@ -441,9 +436,9 @@
             this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(638, 232);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 17);
+            this.label25.Size = new System.Drawing.Size(53, 17);
             this.label25.TabIndex = 9;
-            this.label25.Text = "N3 Count";
+            this.label25.Text = "Income";
             // 
             // label26
             // 
@@ -451,9 +446,9 @@
             this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(638, 199);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(66, 17);
+            this.label26.Size = new System.Drawing.Size(53, 17);
             this.label26.TabIndex = 8;
-            this.label26.Text = "N2 Count";
+            this.label26.Text = "Income";
             // 
             // label27
             // 
@@ -461,9 +456,9 @@
             this.label27.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(638, 166);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(66, 17);
+            this.label27.Size = new System.Drawing.Size(53, 17);
             this.label27.TabIndex = 7;
-            this.label27.Text = "N5 Count";
+            this.label27.Text = "Income";
             // 
             // label28
             // 
@@ -517,16 +512,16 @@
             // 
             // chart3
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart3.Legends.Add(legend4);
             this.chart3.Location = new System.Drawing.Point(29, 69);
             this.chart3.Name = "chart3";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart3.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Enrollments";
+            this.chart3.Series.Add(series4);
             this.chart3.Size = new System.Drawing.Size(490, 300);
             this.chart3.TabIndex = 1;
             this.chart3.Text = "chart3";
@@ -541,14 +536,12 @@
             this.label33.TabIndex = 0;
             this.label33.Text = "Intake : 2023 April";
             // 
-            // CourseAnalysis
+            // IncomeAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "CourseAnalysis";
+            this.Name = "IncomeAnalysis";
             this.Size = new System.Drawing.Size(801, 482);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
