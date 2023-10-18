@@ -49,5 +49,15 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
         {
             checkBox1.Checked = false;
         }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
