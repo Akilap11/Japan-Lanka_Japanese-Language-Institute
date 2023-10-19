@@ -14,6 +14,9 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
     public partial class StaffControll : UserControl
     {
+        //CONNECTION
+        private string connectionString = "Data Source=SiCks-ROG-G14\\MSSQLSERVER01;Initial Catalog=JapanLanka;Integrated Security=True";
+
         public StaffControll()
         {
             InitializeComponent();
@@ -37,7 +40,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
             String address = textBox3.Text;
             String nic = textBox4.Text;
 
-            string connectionString = "Data Source=SiCks-ROG-G14\\MSSQLSERVER01;Initial Catalog=JapanLanka;Integrated Security=True";
+            //INSERT QUERY
             string insertQuery = "insert into staff (stid,password,name,mobile_no,address,nic) values (@STID,@PASSWORD,@NAME,@MOBILE_NO,@ADDRESS,@NIC)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -55,6 +58,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
                     int rowsAffected = cmd.ExecuteNonQuery();
 
+                    //CONSOLE MESSAGE
                     if (rowsAffected > 0)
                     {
                         Console.WriteLine("Data inserted successfully");
@@ -68,17 +72,22 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
                 }
             }
+            //CLEAR TEXTBOXES
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
             textBox4.Clear();
             textBox6.Clear();
             textBox7.Clear();
+
+            //UPDATE GRIDVIEW WHEN SUBMIT CLICKS
+            UpdateDataGridView();
 
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            //CLEAR TEXTBOXES
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
@@ -86,5 +95,37 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
             textBox6.Clear();
             textBox7.Clear();
         }
+
+
+        private void StaffControll_Load_1(object sender, EventArgs e)
+        {
+            //UPDATE GRIDVIEW WHEN STAFF CONTROL LOADS
+            UpdateDataGridView();
+            
+        }
+        private void UpdateDataGridView()
+        {
+            string selectQuery = "SELECT stid, password, name, mobile_no, address, nic FROM staff";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // REVERSE ROW ORDER IN GRIDVIEW
+                        DataTable reversedTable = dataTable.AsEnumerable().Reverse().CopyToDataTable();
+
+                        dataGridView1.DataSource = reversedTable;
+                    }
+                }
+            }
+        }
     }
+
 }
