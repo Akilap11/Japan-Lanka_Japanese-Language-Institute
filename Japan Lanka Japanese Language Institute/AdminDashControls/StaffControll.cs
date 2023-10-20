@@ -15,7 +15,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
     public partial class StaffControll : UserControl
     {
         //CONNECTION
-        private string connectionString = "Data Source=SiCks-ROG-G14\\MSSQLSERVER01;Initial Catalog=JapanLanka;Integrated Security=True";
+        private string connectionString = "Data Source=LAPTOP-F2O073A4\\SQLEXPRESS;Initial Catalog=a;Integrated Security=True";
 
         public StaffControll()
         {
@@ -218,6 +218,16 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
                     }
                 }
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
