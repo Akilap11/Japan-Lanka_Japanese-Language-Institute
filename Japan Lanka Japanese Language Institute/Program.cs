@@ -16,7 +16,7 @@ namespace Japan_Lanka_Japanese_Language_Institute
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboard());
+            Application.Run(new StartingForm());
         }
     }
 }

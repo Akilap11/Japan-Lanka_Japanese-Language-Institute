@@ -33,6 +33,18 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //SHOW ERROR IF TEXTBOXES ARE EMPTY
+            if 
+                (   string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrEmpty(textBox7.Text) ||
+                    string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) ||
+                    string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) )
+                {
+                MessageBox.Show("Please enter data in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+                }
+
+            //ELSE 
+
             String stid = textBox6.Text;
             String password = textBox7.Text;
             String name = textBox1.Text;
@@ -87,6 +99,41 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            // CHECK IF STAFF ID PASSSWORD TEXTBOXES EMPTY
+            if (string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrEmpty(textBox7.Text))
+            {
+                MessageBox.Show("Please enter Staff ID and Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // CHECK OTHER TEXTBOXES HAVE DATA
+            if (!string.IsNullOrEmpty(textBox1.Text) || !string.IsNullOrEmpty(textBox2.Text) || !string.IsNullOrEmpty(textBox3.Text) || !string.IsNullOrEmpty(textBox4.Text))
+            {
+                MessageBox.Show("Please clear the other text boxes before proceeding.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            string stid = textBox6.Text;
+            string password = textBox7.Text;
+
+            // IF DATA EXIST IN DB OR NOT
+            if (DoesDataExist(stid, password))
+            {
+                if (DeleteData(stid))
+                {
+                    MessageBox.Show("Data deleted successfully");
+                    UpdateDataGridView();
+                }
+                else
+                {
+                    MessageBox.Show("Data deletion failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Data not found");
+            }
             //CLEAR TEXTBOXES
             textBox1.Clear();
             textBox2.Clear();
@@ -96,13 +143,59 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
             textBox7.Clear();
         }
 
+        //CHECK DATABASE FOR DATA
+        private bool DoesDataExist(string stid, string password)
+        {
+            string selectQuery = "SELECT stid FROM staff WHERE stid = @STID AND password = @PASSWORD";
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@STID", stid);
+                    cmd.Parameters.AddWithValue("@PASSWORD", password);
+
+                    object result = cmd.ExecuteScalar();
+                    return (result != null);
+                }
+            }
+        }
+
+        //DELETE DATA FROM DATABASE 
+        private bool DeleteData(string stid)
+        {
+            string deleteQuery = "DELETE FROM staff WHERE stid = @STID";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@STID", stid);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
         private void StaffControll_Load_1(object sender, EventArgs e)
         {
             //UPDATE GRIDVIEW WHEN STAFF CONTROL LOADS
             UpdateDataGridView();
             
         }
+
         private void UpdateDataGridView()
         {
             string selectQuery = "SELECT stid, password, name, mobile_no, address, nic FROM staff";
@@ -127,5 +220,4 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
             }
         }
     }
-
 }
