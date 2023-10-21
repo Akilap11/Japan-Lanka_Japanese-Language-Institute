@@ -29,5 +29,10 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             textBox2.Clear();
             textBox3.Clear();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
