@@ -68,7 +68,7 @@
             this.Button_Visa.Name = "Button_Visa";
             this.Button_Visa.Size = new System.Drawing.Size(291, 59);
             this.Button_Visa.TabIndex = 3;
-            this.Button_Visa.Text = "Visa  Registration";
+            this.Button_Visa.Text = "Visa  Registration    ";
             this.Button_Visa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Button_Visa.UseVisualStyleBackColor = true;
             this.Button_Visa.Click += new System.EventHandler(this.Button_Visa_Click);
@@ -273,7 +273,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(291, 59);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Course Meterials";
+            this.button1.Text = "Course Meterials      ";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
