@@ -280,9 +280,10 @@
             this.label8.Location = new System.Drawing.Point(98, 10);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(344, 29);
+            this.label8.Size = new System.Drawing.Size(345, 29);
             this.label8.TabIndex = 26;
-            this.label8.Text = "Student Registrstion for Visa";
+            this.label8.Text = "Student Registration for Visa";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel1
             // 
@@ -346,7 +347,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 25);
             this.button8.TabIndex = 21;
-            this.button8.Text = "Brawse";
+            this.button8.Text = "Browse";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -359,7 +360,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(80, 25);
             this.button7.TabIndex = 20;
-            this.button7.Text = "Brawse";
+            this.button7.Text = "Browse";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -372,7 +373,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(80, 25);
             this.button6.TabIndex = 19;
-            this.button6.Text = "Brawse";
+            this.button6.Text = "Browse";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -385,7 +386,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 25);
             this.button5.TabIndex = 18;
-            this.button5.Text = "Brawse";
+            this.button5.Text = "Browse";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -398,7 +399,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(80, 25);
             this.button4.TabIndex = 17;
-            this.button4.Text = "Brawse";
+            this.button4.Text = "Browse";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -411,7 +412,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 25);
             this.button3.TabIndex = 16;
-            this.button3.Text = "Brawse";
+            this.button3.Text = "Browse";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // textBox7
@@ -574,9 +575,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(61, 40);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 25);
+            this.label9.Size = new System.Drawing.Size(120, 25);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Docments";
+            this.label9.Text = "Documents";
             // 
             // Visa_Registration
             // 
