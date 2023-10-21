@@ -38,11 +38,53 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
             XValues1.Add("Ambassador 5");
             YValues1.Add(52);
+
+
+            XValues2.Add("Ambassador 1");
+            YValues2.Add(42);
+
+            XValues2.Add("Ambassador 2");
+            YValues2.Add(61);
+
+            XValues2.Add("Ambassador 3");
+            YValues2.Add(50);
+
+            XValues2.Add("Ambassador 4");
+            YValues2.Add(40);
+
+            XValues2.Add("Ambassador 5");
+            YValues2.Add(52);
+
+
+            XValues3.Add("Ambassador 1");
+            YValues3.Add(42);
+
+            XValues3.Add("Ambassador 2");
+            YValues3.Add(61);
+
+            XValues3.Add("Ambassador 3");
+            YValues3.Add(50);
+
+            XValues3.Add("Ambassador 4");
+            YValues3.Add(40);
+
+            XValues3.Add("Ambassador 5");
+            YValues3.Add(52);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             chart1.Series["Enrollments"].Points.DataBindXY(XValues1, YValues1);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            chart2.Series["Enrollments"].Points.DataBindXY(XValues2, YValues2);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            chart3.Series["Enrollments"].Points.DataBindXY(XValues3, YValues3);
         }
     }
 }
