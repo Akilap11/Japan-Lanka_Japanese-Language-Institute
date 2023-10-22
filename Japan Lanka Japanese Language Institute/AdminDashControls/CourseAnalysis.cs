@@ -17,79 +17,42 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
     public partial class CourseAnalysis : UserControl
     {
-        List<String> XValues1 = new List<String>();
-        List<int> YValues1 = new List<int>();
-
-        List<String> XValues2 = new List<String>();
-        List<int> YValues2 = new List<int>();
-
-        List<String> XValues3 = new List<String>();
-        List<int> YValues3 = new List<int>();
 
         public CourseAnalysis()
         {
             InitializeComponent();
-            XValues1.Add("N5"); 
-            YValues1.Add(48);
-
-            XValues1.Add("N4");
-            YValues1.Add(61);
-
-            XValues1.Add("N3");
-            YValues1.Add(53);
-
-            XValues1.Add("N2");
-            YValues1.Add(50);
-
-            XValues1.Add("N1");
-            YValues1.Add(45);
-
-
-            XValues2.Add("N5");
-            YValues2.Add(54);
-
-            XValues2.Add("N4");
-            YValues2.Add(43);
-
-            XValues2.Add("N3");
-            YValues2.Add(60);
-
-            XValues2.Add("N2");
-            YValues2.Add(35);
-
-            XValues2.Add("N1");
-            YValues2.Add(41);
-
-
-            XValues3.Add("N5");
-            YValues3.Add(40);
-
-            XValues3.Add("N4");
-            YValues3.Add(69);
-
-            XValues3.Add("N3");
-            YValues3.Add(43);
-
-            XValues3.Add("N2");
-            YValues3.Add(50);
-
-            XValues3.Add("N1");
-            YValues3.Add(57);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        void FillChartWithStoredProc()
         {
-            chart1.Series["Enrollments"].Points.DataBindXY(XValues1, YValues1);
+            string connectionString = "Data Source=SiCks-ROG-G14\\MSSQLSERVER01;Initial Catalog=final;Integrated Security=True";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("CalculateClassCount", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con.Close();
+
+                chart1.DataSource = dt;
+                chart1.Series["Enrollments"].XValueMember = "class";
+                chart1.Series["Enrollments"].YValueMembers = "EnrollmentCount";
+                chart1.Titles.Add("ANALYZE");
+            }
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void CourseAnalysis_Load(object sender, EventArgs e)
         {
-            chart2.Series["Series1"].Points.DataBindXY(XValues2, YValues2);
+            
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void CourseAnalysis_Load_1(object sender, EventArgs e)
         {
-            chart3.Series["Series1"].Points.DataBindXY(XValues3, YValues3);
+            FillChartWithStoredProc();
         }
     }
 }
+
