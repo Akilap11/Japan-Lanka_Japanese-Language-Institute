@@ -183,7 +183,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
             
             string connectionString = "Data Source=DESKTOP-FETG8PP;Initial Catalog=JapanLanka;Integrated Security=True";
-            string insertQuery = "insert into course (full_name,dob,age,gender,address,email,nic,class,al,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Ambassador)";
+            string insertQuery = "insert into course (full_name,dob,age,gender,address,email,nic,class,al,intake,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Intake,@Ambassador)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -200,6 +200,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
                     cmd.Parameters.AddWithValue("@NIC", nic);
                     cmd.Parameters.AddWithValue("@Classes", classes);
                     cmd.Parameters.AddWithValue("@ALvel", alvel);
+                    cmd.Parameters.AddWithValue("@Intake", intake);
                     cmd.Parameters.AddWithValue("@Ambassador", ambassador);
 
 
