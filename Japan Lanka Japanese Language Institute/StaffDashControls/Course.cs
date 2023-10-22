@@ -164,6 +164,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             String classes = comboBox1.Text;
             string alvel = al;
             String gender = selectedgender;
+            String intake = comboBox2.Text;
             String ambassador = textBox2.Text;
 
 
@@ -182,7 +183,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
             
             string connectionString = "Data Source=DESKTOP-FETG8PP;Initial Catalog=JapanLanka;Integrated Security=True";
-            string insertQuery = "insert into courses (full_name,dob,age,gender,address,email,nic,class,al,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Ambassador)";
+            string insertQuery = "insert into course (full_name,dob,age,gender,address,email,nic,class,al,ambassad_name) values (@Fullname,@DOB,@AGE,@Gender,@Address,@Email,@NIC,@Classes,@ALvel,@Ambassador)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
