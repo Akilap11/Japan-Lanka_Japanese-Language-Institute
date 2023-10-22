@@ -23,21 +23,28 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
             InitializeComponent();
         }
 
-        void FillChartWithStoredProc()
+        void FillChartWithSelectedYearAndMonth(int selectedYear, int selectedMonth)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("CalculateClassCount", con);
+                SqlCommand cmd = new SqlCommand("CalculateClassCountByYearMonth", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@SelectedYear", selectedYear);
+                cmd.Parameters.AddWithValue("@SelectedMonth", selectedMonth);
+
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 con.Close();
 
+                chart1.Titles.Clear();
+
                 chart1.DataSource = dt;
                 chart1.Series["Enrollments"].XValueMember = "class";
                 chart1.Series["Enrollments"].YValueMembers = "EnrollmentCount";
+
                 chart1.Titles.Add("ANALYZE");
             }
         }
@@ -52,7 +59,6 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                // Clear any existing items in comboBox1
                 comboBox1.Items.Clear();
 
                 while (reader.Read())
@@ -64,7 +70,6 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
                 con.Close();
             }
 
-            // Set the selected index to 0 (No default item)
             comboBox1.SelectedIndex = 0;
             UpdateComboBox2();
         }
@@ -103,21 +108,23 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 
         private void CourseAnalysis_Load_1(object sender, EventArgs e)
         {
-            FillChartWithStoredProc();
             PopulateComboBoxes();
 
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
 
+            FillChartWithSelectedYearAndMonth((int)comboBox1.SelectedItem, (int)comboBox2.SelectedItem);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateComboBox2();
+            FillChartWithSelectedYearAndMonth((int)comboBox1.SelectedItem, (int)comboBox2.SelectedItem);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            FillChartWithSelectedYearAndMonth((int)comboBox1.SelectedItem, (int)comboBox2.SelectedItem);
         }
     }
 }
