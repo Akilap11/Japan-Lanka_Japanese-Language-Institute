@@ -17,7 +17,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
 {
     public partial class CourseAnalysis : UserControl
     {
-        private string connectionString = "Data Source=SiCks-ROG-G14\\MSSQLSERVER01;Initial Catalog=final;Integrated Security=True";
+        private string connectionString = "Data Source=LAPTOP-F2O073A4\\SQLEXPRESS;Initial Catalog=final4;Integrated Security=True";
         public CourseAnalysis()
         {
             InitializeComponent();
@@ -125,6 +125,21 @@ namespace Japan_Lanka_Japanese_Language_Institute.AdminDashControls
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             FillChartWithSelectedYearAndMonth((int)comboBox1.SelectedItem, (int)comboBox2.SelectedItem);
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
