@@ -222,6 +222,9 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
 
         }
 
-      
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

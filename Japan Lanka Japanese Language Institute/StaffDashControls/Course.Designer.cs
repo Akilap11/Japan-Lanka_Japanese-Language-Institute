@@ -60,6 +60,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -255,7 +256,7 @@
             this.button3.BackColor = System.Drawing.Color.Gray;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(309, 503);
+            this.button3.Location = new System.Drawing.Point(289, 494);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 30);
@@ -299,7 +300,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(52, 503);
+            this.textBox7.Location = new System.Drawing.Point(52, 498);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(217, 26);
@@ -312,9 +313,10 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(48, 455);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 22);
+            this.label10.Size = new System.Drawing.Size(175, 28);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Payment Receipt Copy";
+            this.label10.Text = "Payment Deatils";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // dateTimePicker1
             // 
@@ -439,11 +441,19 @@
             this.textBox8.Size = new System.Drawing.Size(285, 27);
             this.textBox8.TabIndex = 31;
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(52, 535);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(217, 22);
+            this.textBox9.TabIndex = 32;
+            // 
             // Course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.comboBox2);
@@ -519,5 +529,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }

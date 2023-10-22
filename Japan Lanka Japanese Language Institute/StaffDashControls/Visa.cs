@@ -350,7 +350,7 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             String fullname = textBox1.Text;
             String dob = dateTimePicker1.Text;
             String Age = maskedTextBox2.Text;
-            String gender = "";
+            String gender = selectedgender;
             String address = maskedTextBox3.Text;
             String email = maskedTextBox4.Text;
             String nic = maskedTextBox5.Text;
@@ -363,8 +363,9 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             String niccopy = textBox4.Text;
             String alcopy = textBox5.Text;
             String olcopy = textBox6.Text;
-            String payment = textBox7.Text;
+            String paymentdoc = textBox7.Text;
             String ambassdor = textBox8.Text;
+            String payment = textBox9.Text;
 
 
             DateTime parsedDate;
@@ -381,7 +382,8 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
             // add values of database
 
             string connectionString = "Data Source=DESKTOP-FETG8PP;Initial Catalog=JapanLanka;Integrated Security=True";
-            string insertQuery = "insert into visa1 (full_name,dob,age,gender,address,email,nic,course,ambassador_name) values (@Fullname,@DOB,@Age,@Gender,@Address,@Email,@NIC,@Course,@Ambassador)";
+            string insertQuery = "insert into visa1 (full_name,dob,age,gender,address,email,nic,course,birthday_copy,property_copy,nic_copy,al_copy,ol_copy,payment_receipt_copy,ambassador_name,payment_value)" +
+                " values (@Fullname,@DOB,@Age,@Gender,@Address,@Email,@NIC,@Course,@Birthday_copy,@Property_copy,@NIC_copy,@AL_copy,@OL_copy,@Payment_receipt_copy,@Ambassador,@Payment_value)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -398,6 +400,14 @@ namespace Japan_Lanka_Japanese_Language_Institute.StaffDashControls
                     cmd.Parameters.AddWithValue("@NIC", nic);
                     cmd.Parameters.AddWithValue("@Course", selectcourse);
                     cmd.Parameters.AddWithValue("@Ambassador", ambassdor);
+                    cmd.Parameters.AddWithValue("@Birthday_copy", birth);
+                    cmd.Parameters.AddWithValue("@Property_copy", property);
+                    cmd.Parameters.AddWithValue("@NIC_copy", niccopy);
+                    cmd.Parameters.AddWithValue("@AL_copy", alcopy);
+                    cmd.Parameters.AddWithValue("@OL_copy", olcopy);
+                    cmd.Parameters.AddWithValue("@Payment_receipt_copy", paymentdoc);
+                    cmd.Parameters.AddWithValue("@Payment_value", payment);
+
                    
 
 

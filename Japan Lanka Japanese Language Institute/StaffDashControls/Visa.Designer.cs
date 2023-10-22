@@ -71,6 +71,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,7 +158,7 @@
             this.Course.AutoSize = true;
             this.Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Course.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Course.Location = new System.Drawing.Point(61, 611);
+            this.Course.Location = new System.Drawing.Point(61, 536);
             this.Course.Name = "Course";
             this.Course.Size = new System.Drawing.Size(60, 20);
             this.Course.TabIndex = 7;
@@ -250,7 +251,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Location = new System.Drawing.Point(189, 614);
+            this.checkBox1.Location = new System.Drawing.Point(189, 539);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(53, 20);
@@ -263,7 +264,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox2.Location = new System.Drawing.Point(277, 614);
+            this.checkBox2.Location = new System.Drawing.Point(277, 539);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(47, 20);
@@ -287,6 +288,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.textBox8);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.button8);
@@ -342,7 +344,7 @@
             this.button8.BackColor = System.Drawing.Color.Gray;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(272, 410);
+            this.button8.Location = new System.Drawing.Point(252, 389);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 25);
@@ -418,7 +420,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(61, 406);
+            this.textBox7.Location = new System.Drawing.Point(60, 390);
             this.textBox7.Margin = new System.Windows.Forms.Padding(0);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(169, 26);
@@ -506,12 +508,12 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(57, 367);
+            this.label16.Location = new System.Drawing.Point(57, 358);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(170, 20);
+            this.label16.Size = new System.Drawing.Size(124, 20);
             this.label16.TabIndex = 7;
-            this.label16.Text = "Payment Receipt Copy";
+            this.label16.Text = "Payment Details";
             // 
             // label14
             // 
@@ -578,6 +580,13 @@
             this.label9.Size = new System.Drawing.Size(120, 25);
             this.label9.TabIndex = 0;
             this.label9.Text = "Documents";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(61, 427);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(167, 22);
+            this.textBox9.TabIndex = 30;
             // 
             // Visa_Registration
             // 
@@ -660,5 +669,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
